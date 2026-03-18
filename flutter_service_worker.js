@@ -785,6 +785,7 @@ self.addEventListener("activate", function(event) {
         self.clients.claim();
         return;
       }
+      //TO DO
       var oldManifest = await manifest.json();
       var origin = self.location.origin;
       for (var request of await contentCache.keys()) {
